@@ -10,4 +10,4 @@ This 'oneliner' for loop optimizes high-throughput batch submission of a directo
 ##Code##
 ########
 
-for file in ~/bash_final/dir1/; do bsub -P acc_BSR1015F2015 -q expressalloc -W 2 -o ${file##/}.out -e ${file##/}.err -J ${file##/} cat ~/bash_final/dir1/${file##*/}; done
+for file in ~/<your_working_dir>/; do bsub -P <acc> -q <que> -W <estimated_wall_time> -o ${file##/}.out -e ${file##/}.err -J ${file##/} cat ~/<your_working_dir>/${file##*/}; done
