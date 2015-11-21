@@ -10,4 +10,4 @@ This 'oneliner' for loop optimizes high-throughput batch submission of a directo
 ##Code##
 ########
 
-for file in ~/your_working_dir/; do bsub -P account -q que -W estimated_wall_time -o ${file##*/}.out -e ${file##*/}.err -J ${file##*/} cat ~/your_working_dir/${file##*/}; done
+`for file in ~/your_working_dir/; do bsub -P account -q que -W estimated_wall_time -o ${file##*/}.out -e ${file##*/}.err -J ${file##*/} cat ~/your_working_dir/${file##*/}; done`
